@@ -29,14 +29,13 @@
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
-- [❓ FAQ (OPTIONAL)](#faq)
 - [📝 License](#license)
 
 
 
-# 📖 [Awsome Books With React] <a name="about-project"></a>
+# 📖 Awsome Books With React <a name="about-project"></a>
 
-**[Awsome Books With React]** is a... Describe your project in 1 or 2 sentences.
+**Awsome Books With React** is a... Describe your project in 1 or 2 sentences.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -53,7 +52,7 @@
 
 ### Key Features <a name="key-features"></a>
 
-> Describe between 1-3 key features of the application.
+<!-- > Describe between 1-3 key features of the application. -->
 
 - **[Use Create React APP]**
 - **[Use React Routes]**
