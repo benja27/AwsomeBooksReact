@@ -36,7 +36,7 @@ function Book({
         className="d-flex flex-column align-items-center justify-content-center"
       >
         <div className="" style={{ width: '300px' }}>
-          <h4>hola</h4>
+          <h4>Current Chapter</h4>
           <h5>Chapter 17</h5>
           <button type="button" className="btn btn-primary">
             Update Progress
