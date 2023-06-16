@@ -35,7 +35,7 @@
 
 # 📖 Awsome Books With React <a name="about-project"></a>
 
-**Awsome Books With React** is a... Describe your project in 1 or 2 sentences.
+**Awsome Books With React** is a project that implement React and Redux to create a user interface that allows user to save books in the APP.
 
 ## 🛠 Built With <a name="built-with"></a>
 
