@@ -12,12 +12,12 @@ function Book({
           <h4>{name}</h4>
           <h6>{author}</h6>
           <div className="d-flex gap-3">
-            <p>Comments</p>
-            <p>|</p>
-            <p>Remove</p>
-            <p>|</p>
-            <p>Comments</p>
-            <p>|</p>
+            <button type="button" className="btn btn-success">Comments</button>
+
+            <button type="button" className="btn btn-danger">Remove</button>
+
+            <button type="button" className="btn btn-primary">Edit</button>
+
           </div>
         </div>
         <div
