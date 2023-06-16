@@ -1,15 +1,15 @@
-*{
-  margin: 0 ;
+* {
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-#root{
-  background-color: white;
+#root {
   width: 100%;
   margin: 0 auto;
-  background-color: #FAFAFA;
+  background-color: #fafafa;
 }
+
 .header-container {
   width: 90%;
   margin: 0 auto;
@@ -17,21 +17,21 @@
 
 .book {
   background-color: white;
-  box-shadow: 1px 1px 1px 1px #888888;
+  box-shadow: 1px 1px 1px 1px #888;
 }
-.center{
+
+.center {
   width: 90%;
   margin: 0 auto;
 }
 
-
 body {
-  background-color: red;  
-  background-color: #FAFAFA;
-  margin: 0 auto;  
+  background-color: red;
+  background-color: #fafafa;
+  margin: 0 auto;
 }
 
 .check,
-.check *{
+.check * {
   border: 1px solid black;
 }
