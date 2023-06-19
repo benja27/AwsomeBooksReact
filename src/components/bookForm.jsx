@@ -1,6 +1,27 @@
+import { useState } from 'react';
+import { useDispatch } from 'react-redux';
+import { addBook } from '../redux/bookSlice';
+
 function BookForm() {
+  const [bookData, setBookData] = useState({
+    title: '', author: '', id: 0, progress: 0,
+  });
+
+  const dispatch = useDispatch();
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setBookData({ ...bookData, id: Math.random(), progress: Math.floor(Math.random() * 100) });
+    dispatch(addBook(bookData));
+  };
+
   return (
-    <form action="" className="" style={{ marginTop: '50px', marginBottom: '150px' }}>
+    <form
+      action=""
+      onSubmit={(e) => handleSubmit(e)}
+      className=""
+      style={{ marginTop: '50px', marginBottom: '150px' }}
+    >
       <h4 className="pb-4">ADD NEW BOOK</h4>
       <div className="d-flex w-100 justify-content-between">
         <input
@@ -8,6 +29,7 @@ function BookForm() {
           type="text"
           className="form-control py-3"
           name=""
+          onChange={(e) => setBookData({ ...bookData, title: e.target.value })}
           id=""
           aria-describedby="helpId"
           placeholder="Book title"
@@ -16,12 +38,13 @@ function BookForm() {
           style={{ width: '30%' }}
           type="text"
           className="form-control py-3"
+          onChange={(e) => setBookData({ ...bookData, author: e.target.value })}
           name=""
           id=""
           aria-describedby="helpId"
-          placeholder="Category"
+          placeholder="Author"
         />
-        <button type="button" className="btn btn-primary px-5">
+        <button type="submit" className="btn btn-primary px-5">
           ADD BOOK
         </button>
       </div>

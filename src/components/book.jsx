@@ -1,22 +1,32 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { useDispatch, useSelector } from 'react-redux';
+import { removeBook } from '../redux/bookSlice';
 
 function Book({
-  name, author, category, progress,
+  title, author, id, progress,
 }) {
+  const dispatch = useDispatch();
+  const books = useSelector((data) => data.books.books);
+  console.log(books);
+
   return (
     <div className="d-flex book px-4 py-4 rounded mb-5">
       <div style={{ width: '60%' }} className="d-flex justify-content-between">
         <div className="">
-          <h5>{category}</h5>
-          <h4>{name}</h4>
+          <h5>Category</h5>
+          <h4>{title}</h4>
           <h6>{author}</h6>
           <div className="d-flex gap-3">
             <button type="button" className="btn btn-success">
               Comments
             </button>
 
-            <button type="button" className="btn btn-danger">
+            <button
+              onClick={() => dispatch(removeBook(id))}
+              type="button"
+              className="btn btn-danger"
+            >
               Remove
             </button>
 
@@ -35,7 +45,11 @@ function Book({
             alt=""
           />
           <div>
-            <h1>{progress}</h1>
+            <h1>
+              { progress }
+              {' '}
+              %
+            </h1>
             <h5>completed</h5>
           </div>
         </div>
@@ -57,10 +71,10 @@ function Book({
 }
 
 Book.propTypes = {
-  name: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
   author: PropTypes.string.isRequired,
-  category: PropTypes.string.isRequired,
-  progress: PropTypes.string.isRequired,
+  id: PropTypes.number.isRequired,
+  progress: PropTypes.number.isRequired,
 };
 
 export default Book;
