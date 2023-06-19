@@ -12,19 +12,28 @@ function Book({
           <h4>{name}</h4>
           <h6>{author}</h6>
           <div className="d-flex gap-3">
-            <button type="button" className="btn btn-success">Comments</button>
+            <button type="button" className="btn btn-success">
+              Comments
+            </button>
 
-            <button type="button" className="btn btn-danger">Remove</button>
+            <button type="button" className="btn btn-danger">
+              Remove
+            </button>
 
-            <button type="button" className="btn btn-primary">Edit</button>
-
+            <button type="button" className="btn btn-primary">
+              Edit
+            </button>
           </div>
         </div>
         <div
           className="d-flex align-items-center gap-4"
           style={{ paddingRight: '100px' }}
         >
-          <img className="rounded-circle" src="https://placeimg.com/80/80" alt="" />
+          <img
+            className="rounded-circle"
+            src="https://placeimg.com/80/80"
+            alt=""
+          />
           <div>
             <h1>{progress}</h1>
             <h5>completed</h5>

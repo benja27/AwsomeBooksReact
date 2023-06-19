@@ -1,5 +1,3 @@
-import React from 'react';
-
 function BookForm() {
   return (
     <form action="" className="" style={{ marginTop: '50px', marginBottom: '150px' }}>
