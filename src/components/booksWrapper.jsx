@@ -6,27 +6,6 @@ import BookForm from './bookForm';
 function BooksWrapper() {
   const books = useSelector((data) => data.books);
 
-  // const listOfBooks = [
-  //   {
-  //     name: 'The Hunger Games',
-  //     author: 'Suzanne Collins',
-  //     category: 'Action',
-  //     progress: '8%',
-  //     },
-  //     {
-  //       name: 'Dune',
-  //       author: 'Franj Herbert',
-  //       category: 'Sci-Fi',
-  //       progress: '64%',
-  //     },
-  //     {
-  //       name: 'Capital in the Twenty-First Century',
-  //       author: 'Suzanne Collins',
-  //       category: 'Economy',
-  //       progress: '0%',
-  //   },
-  // ];
-
   return (
     <div className="center" style={{ marginTop: '50px' }}>
       {books.length !== 0 ? books.books.map((book) => (
@@ -35,6 +14,7 @@ function BooksWrapper() {
           author={book.author}
           progress={book.progress}
           id={book.id}
+          category={book.category}
           key={Math.random()}
         />
       )) : <h1>Empty list</h1>}

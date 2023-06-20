@@ -4,14 +4,14 @@ import { addBook } from '../redux/books/bookSlice';
 
 function BookForm() {
   const [bookData, setBookData] = useState({
-    title: '', author: '', id: 0, progress: 0,
+    title: '', author: '', id: 0, category: 'no category',
   });
 
   const dispatch = useDispatch();
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setBookData({ ...bookData, id: Math.random(), progress: Math.floor(Math.random() * 100) });
+    setBookData({ ...bookData, id: Math.random() });
     dispatch(addBook(bookData));
   };
 

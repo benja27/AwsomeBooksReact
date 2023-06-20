@@ -4,7 +4,7 @@ import { useDispatch } from 'react-redux';
 import { removeBook } from '../redux/books/bookSlice';
 
 function Book({
-  title, author, id, progress,
+  title, author, id, category,
 }) {
   const dispatch = useDispatch();
   // const books = useSelector((data) => data.books.books);
@@ -13,7 +13,7 @@ function Book({
     <div className="d-flex book px-4 py-4 rounded mb-5">
       <div style={{ width: '60%' }} className="d-flex justify-content-between">
         <div className="">
-          <h5>Category</h5>
+          <h5>{category || 'no category' }</h5>
           <h4>{title}</h4>
           <h6>{author}</h6>
           <div className="d-flex gap-3">
@@ -45,9 +45,7 @@ function Book({
           />
           <div>
             <h1>
-              { progress }
-              {' '}
-              %
+              51%
             </h1>
             <h5>completed</h5>
           </div>
@@ -73,7 +71,7 @@ Book.propTypes = {
   title: PropTypes.string.isRequired,
   author: PropTypes.string.isRequired,
   id: PropTypes.number.isRequired,
-  progress: PropTypes.number.isRequired,
+  category: PropTypes.string.isRequired,
 };
 
 export default Book;
