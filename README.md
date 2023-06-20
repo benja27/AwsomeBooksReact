@@ -3,11 +3,8 @@
 <div align="center"> 
   <img src="nyan-cat-gif.webp" alt="logo" width="140"  height="auto" />
   <br/>
-
   <h3><b>Welcome to this Repository :)</b></h3>
-
 </div>
-
 
 
 # 📗 Table of Contents
