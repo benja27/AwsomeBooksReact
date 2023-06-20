@@ -27,6 +27,7 @@ function BookForm() {
         <input
           style={{ width: '50%' }}
           type="text"
+          required
           className="form-control py-3"
           name=""
           onChange={(e) => setBookData({ ...bookData, title: e.target.value })}
@@ -37,6 +38,7 @@ function BookForm() {
         <input
           style={{ width: '30%' }}
           type="text"
+          required
           className="form-control py-3"
           onChange={(e) => setBookData({ ...bookData, author: e.target.value })}
           name=""

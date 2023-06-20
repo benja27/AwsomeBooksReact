@@ -4,7 +4,7 @@ import { useDispatch } from 'react-redux';
 import { removeBook } from '../redux/books/bookSlice';
 
 function Book({
-  title, author, id, category,
+  title, author, id, category, progress,
 }) {
   const dispatch = useDispatch();
   // const books = useSelector((data) => data.books.books);
@@ -45,7 +45,8 @@ function Book({
           />
           <div>
             <h1>
-              51%
+              {progress}
+              %
             </h1>
             <h5>completed</h5>
           </div>
@@ -71,6 +72,7 @@ Book.propTypes = {
   title: PropTypes.string.isRequired,
   author: PropTypes.string.isRequired,
   id: PropTypes.number.isRequired,
+  progress: PropTypes.number.isRequired,
   category: PropTypes.string.isRequired,
 };
 

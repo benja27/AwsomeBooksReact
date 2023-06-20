@@ -12,7 +12,7 @@ function BooksWrapper() {
         <Book
           title={book.title}
           author={book.author}
-          progress={book.progress}
+          progress={book.progress || Math.floor(Math.random() * 100)}
           id={book.id}
           category={book.category}
           key={Math.random()}
