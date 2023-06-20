@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { addBook } from '../redux/bookSlice';
+import { addBook } from '../redux/books/bookSlice';
 
 function BookForm() {
   const [bookData, setBookData] = useState({
