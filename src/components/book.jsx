@@ -7,7 +7,6 @@ function Book({
   title, author, id, category, progress,
 }) {
   const dispatch = useDispatch();
-  // const books = useSelector((data) => data.books.books);
 
   return (
     <div className="d-flex book px-4 py-4 rounded mb-5">
