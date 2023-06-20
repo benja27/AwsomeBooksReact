@@ -1,14 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { removeBook } from '../redux/bookSlice';
 
 function Book({
   title, author, id, progress,
 }) {
   const dispatch = useDispatch();
-  const books = useSelector((data) => data.books.books);
-  console.log(books);
+  // const books = useSelector((data) => data.books.books);
 
   return (
     <div className="d-flex book px-4 py-4 rounded mb-5">

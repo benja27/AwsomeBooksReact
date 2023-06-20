@@ -1,17 +1,15 @@
 import React from 'react';
+import { useSelector } from 'react-redux';
 
 function Categories() {
+  const categories = useSelector((data) => data.categories.categories);
+
   return (
     <div className="center">
-      <h1>Categories</h1>
-      <ul>
-        <li>Category 1</li>
-        <li>Category 2</li>
-        <li>Category 3</li>
-        <li>Category 4</li>
-        <li>Category 5</li>
-        <li>Category 6</li>
-      </ul>
+      <h1 className="text-center display-1">Categories</h1>
+      <h1 className="text-center display-2">
+        {categories.length === 0 ? 'Under construction' : ''}
+      </h1>
     </div>
   );
 }

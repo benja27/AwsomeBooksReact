@@ -5,7 +5,6 @@ import BookForm from './bookForm';
 
 function BooksWrapper() {
   const books = useSelector((data) => data.books);
-  console.log(books);
 
   // const listOfBooks = [
   //   {
