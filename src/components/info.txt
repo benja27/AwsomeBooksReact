@@ -4,3 +4,7 @@
       "react-app/jest"
     ]
   },
+
+
+https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/HTWbya7aDLtLFT33O8JP
+  id: HTWbya7aDLtLFT33O8JP
