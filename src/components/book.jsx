@@ -24,6 +24,9 @@ function Book({
             <button
               onClick={() => {
                 dispatch(deleteBook(item_id));
+                setTimeout(() => {
+                  window.location.reload();
+                }, 100);
               }}
               type="button"
               className="btn btn-danger"
