@@ -9,9 +9,6 @@ function BooksWrapper() {
 
   const { books, isLoading } = useSelector((data) => data.books);
 
-  // console.log(books)
-  // const {books} = useSelector(data=> data.books)
-
   useEffect(() => {
     const getbooks = async () => {
       await dispatch(await fetchBooks());

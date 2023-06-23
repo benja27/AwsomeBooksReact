@@ -8,7 +8,7 @@ function Book({
   title, author, item_id, category, progress,
 }) {
   const dispatch = useDispatch();
-  // console.log(item_id)
+
   return (
     <div className="d-flex book px-4 py-4 rounded mb-5">
       <div style={{ width: '60%' }} className="d-flex justify-content-between">

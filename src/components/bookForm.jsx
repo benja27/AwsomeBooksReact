@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { uploadBook } from '../redux/books/bookSlice';
-// import BooksWrapper from './booksWrapper';
 
 function BookForm() {
   const [bookData, setBookData] = useState({
@@ -14,10 +13,8 @@ function BookForm() {
     e.preventDefault();
     const n = Math.random();
     setBookData({ ...bookData, item_id: n });
-    // dispatch(addBook(bookData));
+
     dispatch(uploadBook({ ...bookData, item_id: n }));
-    // console.log(n)
-    console.log(bookData);
   };
 
   return (
