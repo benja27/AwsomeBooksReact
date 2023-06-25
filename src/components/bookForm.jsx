@@ -1,18 +1,20 @@
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { addBook } from '../redux/books/bookSlice';
+import { uploadBook } from '../redux/books/bookSlice';
 
 function BookForm() {
   const [bookData, setBookData] = useState({
-    title: '', author: '', id: 0, category: 'no category',
+    title: '', author: '', item_id: 0, category: 'no category',
   });
 
   const dispatch = useDispatch();
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    setBookData({ ...bookData, id: Math.random() });
-    dispatch(addBook(bookData));
+    const n = Math.random();
+    setBookData({ ...bookData, item_id: n });
+
+    dispatch(uploadBook({ ...bookData, item_id: n }));
   };
 
   return (
@@ -27,6 +29,7 @@ function BookForm() {
         <input
           style={{ width: '50%' }}
           type="text"
+          required
           className="form-control py-3"
           name=""
           onChange={(e) => setBookData({ ...bookData, title: e.target.value })}
@@ -37,6 +40,7 @@ function BookForm() {
         <input
           style={{ width: '30%' }}
           type="text"
+          required
           className="form-control py-3"
           onChange={(e) => setBookData({ ...bookData, author: e.target.value })}
           name=""
