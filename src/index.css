@@ -158,10 +158,12 @@ a {
 
 /* ================= BOOK FORM */
 
-.add-book {
-  /* width: 10.875rem; */
+.add-book {  
   height: 1.5rem;
-  margin: 1.813rem 32.75rem 1.188rem 0;
+  width: 100%;
+  margin-bottom: 1.188rem ;
+  padding-top: 2rem;
+  border-top: 2px solid #e8e8e8;
   font-family: "Montserrat", sans-serif;
   font-size: 1.25rem;
   font-weight: bold;
