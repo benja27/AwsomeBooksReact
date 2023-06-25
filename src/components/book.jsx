@@ -11,7 +11,7 @@ function Book({
   const dispatch = useDispatch();
 
   return (
-    <div className="d-flex book  rounded">
+    <div className="d-flex book mb-3 rounded">
       <div style={{ width: '60%' }} className="d-flex justify-content-between">
         <div className="info">
           <h5 className="category">{category}</h5>
