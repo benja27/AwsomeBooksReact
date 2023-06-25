@@ -24,7 +24,7 @@ function BookForm() {
       className=""
       style={{ marginTop: '50px', marginBottom: '150px' }}
     >
-      <h4 className="pb-4">ADD NEW BOOK</h4>
+      <h4 className="pb-4 add-book">ADD NEW BOOK</h4>
       <div className="d-flex w-100 justify-content-between">
         <input
           style={{ width: '50%' }}
@@ -48,7 +48,7 @@ function BookForm() {
           aria-describedby="helpId"
           placeholder="Author"
         />
-        <button type="submit" className="btn btn-primary px-5">
+        <button type="submit" style={{ backgroundColor: '#0290ff' }} className="btn btn-primary px-5">
           ADD BOOK
         </button>
       </div>

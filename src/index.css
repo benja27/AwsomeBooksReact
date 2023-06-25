@@ -1,27 +1,162 @@
-body {
+/* ------------------------------------------------------- generales */
+/* ------------------------------------------------------- generales */
+/* ------------------------------------------------------- generales */
+* {
   margin: 0;
-  font-family:
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    'Roboto',
-    'Oxygen',
-    'Ubuntu',
-    'Cantarell',
-    'Fira Sans',
-    'Droid Sans',
-    'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family:
-    source-code-pro,
-    Menlo,
-    Monaco,
-    Consolas,
-    'Courier New',
-    monospace;
+body {
+  background-color: red;
+  background-color: #fafafa;
+  margin: 0 auto;
 }
+
+#root{
+  background-color: red;
+  background-color: #fafafa;
+  padding: 0;
+}
+
+.check,
+.check * {
+  border: 1px solid black;
+}
+
+
+/* ================================================ HEADER AND NAVBAR */
+/* ================================================ HEADER AND NAVBAR */
+/* ================================================ HEADER AND NAVBAR */
+
+.header-container {
+  width: 100%;  
+}
+.bookstore-cms{
+  font-family: 'Monserrat', sans-serif ;
+  font-weight: 700;
+  color:#0290ff;
+}
+a{
+  text-decoration: none;
+}
+.person {
+  width: 5.5rem;
+  /* display: none; */
+}
+.nav-links{
+  font-size: 0.83rem;
+  color: #121212;
+}
+
+/* ====================================== BOOK */
+/* ====================================== BOOK */
+/* ====================================== BOOK */
+
+.category {
+  font-family: "Monserrat", sans-serif;
+  font-weight: 700;
+  color: #8B8A8B;
+}
+.title {
+  font-family: "Monserrat";
+  font-weight: 700;
+  font-size: 2rem;
+}
+.author {
+  color: #4386bf;
+  font-size: 0.8rem;
+}
+
+.btn-container{
+  padding-top: 1.15rem;
+}
+
+.btnn{
+  color:#4386bf ;
+  border: none;
+  background-color: transparent;
+  min-width:2.5rem ;
+  padding-right: 1rem;
+  border-right: 1.5px solid #e8e8e8;
+}
+
+.info{
+  width: 50%;
+}
+
+.book {
+  border: solid 1px #e8e8e8;
+  background-color: white;
+  padding: 2rem 2rem 1.625rem 1.688rem;  
+}
+
+.circle-img{
+  width: 4.5rem;
+}
+
+.progresss{  
+  font-size: 2rem;
+  font-weight: 500;
+  color: #121212;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+.current-chapter {
+  opacity: 0.5;
+  font-family: RobotoSlab;
+  font-size: 1.25rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #121212;
+}
+
+.chapter {
+  font-family: RobotoSlab;
+  font-size: 1.3rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.4px;
+  color: #121212;
+  padding-bottom: 1rem ;
+}
+
+.btn-update-progres{
+   width: 11.5rem;
+  height: 2.33rem; 
+  /* margin: 0.75rem 0 0.563rem 3.688rem; */
+  /* padding: 0.438rem 1.188rem 0.5rem 1.375rem; */
+  border-radius: 3px;
+  background-color: #0290ff;
+}
+
+/*================= BOOK FORM */
+/*================= BOOK FORM */
+/*================= BOOK FORM */
+
+.add-book {
+  /* width: 10.875rem; */
+  height: 1.5rem;
+  margin: 1.813rem 32.75rem 1.188rem 0;
+  font-family: Montserrat;
+  font-size: 1.25rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.18px;
+  color: #888;
+}
+
+
+
+
