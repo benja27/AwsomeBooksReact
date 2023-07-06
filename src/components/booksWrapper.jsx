@@ -26,8 +26,7 @@ function BooksWrapper() {
   }
 
   return (
-    <div className="center" style={{ marginTop: '50px' }}>
-      <h1 className="text-center">List of Books</h1>
+    <div className="center bookwraper" style={{ marginTop: '50px' }}>
       {books.map((ele) => (
         <Book
           author={ele.author}
